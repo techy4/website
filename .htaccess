@@ -1,0 +1,13 @@
+Options +FollowSymlinks
+RewriteEngine On   # Turn on the rewriting engine
+ErrorDocument 404 /error404.htm
+#RewriteRule ^services-([0-9]+)$ Services.php?id=$1
+RewriteRule    ^servicesas/?$   		 									Services.php?GL=services     [NC,L]  # Handle requests for "pet-care"
+RewriteRule    ^about/?$   		 											Aboutus.php?GL=Aboutus
+RewriteRule    ^home/?$    													index.php?GL=home 
+RewriteRule    ^services/?$    												Services.php?GL=services 
+RewriteRule    ^projects/?$    												Projects.php?GL=projects
+RewriteRule    ^contactus/?$    											contact.php?GL=contact
+
+
+
